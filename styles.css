@@ -31,6 +31,7 @@ body {
 }
 @media (min-width: 1440px) {
   body {
+    height: 100vh;
     max-width: 1440px;
     margin: 0 auto;
     background: url(./images/bg-pattern-top-desktop.svg),
@@ -159,6 +160,13 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
 }
+@media (min-width: 1440px) {
+  .bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 35rem;
+  }
+}
 
 .review {
   background-color: var(--very-dark-magenta);
@@ -166,6 +174,20 @@ p {
   padding: 3rem;
   margin: 0;
   border-radius: 10px;
+}
+@media (min-width: 1440px) {
+  .review {
+    width: 32%;
+    height: 80%;
+    align-self: center;
+    padding: 4rem;
+  }
+  .review:nth-child(1) {
+    align-self: flex-start;
+  }
+  .review:nth-child(3) {
+    align-self: flex-end;
+  }
 }
 
 .review__header {
