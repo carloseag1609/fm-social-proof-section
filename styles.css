@@ -22,17 +22,17 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Spartan", sans-serif;
-  max-width: 375px;
+  max-width: 768px;
   padding: 2rem;
   background: url(./images/bg-pattern-top-mobile.svg),
     url(/images/bg-pattern-bottom-mobile.svg);
   background-position: top left, bottom right;
   background-repeat: no-repeat;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   body {
     height: 100vh;
-    max-width: 1440px;
+    max-width: 1336px;
     margin: 0 auto;
     background: url(./images/bg-pattern-top-desktop.svg),
       url(/images/bg-pattern-bottom-desktop.svg);
@@ -55,15 +55,15 @@ p {
   margin-top: 5rem;
   margin-bottom: 4rem;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .hero {
-    width: 35%;
+    width: 45%;
   }
   .top {
     margin-top: 9rem;
     margin-bottom: 8rem;
     width: 100%;
-    height: 30rem;
+    min-height: 30rem;
     display: flex;
     justify-content: space-between;
   }
@@ -76,7 +76,7 @@ p {
   color: var(--very-dark-magenta);
   text-align: center;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .hero__title {
     font-size: 4.5rem;
     text-align: left;
@@ -88,7 +88,7 @@ p {
   color: var(--dark-grayish-magenta);
   line-height: 1.5;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .hero__text {
     text-align: left;
     font-size: 1.6rem;
@@ -102,7 +102,7 @@ p {
   height: 30rem;
   margin-bottom: 5rem;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .ratings {
     width: 50%;
   }
@@ -118,7 +118,7 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .rating {
     flex-direction: row;
     align-items: center;
@@ -137,7 +137,7 @@ p {
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .stars {
     display: flex;
     width: 23%;
@@ -160,7 +160,7 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .bottom {
     flex-direction: row;
     justify-content: space-between;
@@ -175,10 +175,10 @@ p {
   margin: 0;
   border-radius: 10px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .review {
     width: 32%;
-    height: 80%;
+    min-height: 80%;
     align-self: center;
     padding: 4rem;
   }
